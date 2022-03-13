@@ -225,7 +225,7 @@ class MesheryProviderApp extends App {
     return (
       <NoSsr>
           <Head>
-            <title>Meshery</title>
+            <title aria-label="Meshery">Meshery</title>
           </Head>
           <MuiThemeProvider theme={theme}>
             <div className={classes.root}>
@@ -237,7 +237,7 @@ class MesheryProviderApp extends App {
                     <Component pageContext={this.pageContext} {...pageProps} />
                   </Paper>
                 </main>
-                <footer className={classes.footer}>
+                <footer className={classes.footer} aria-label="Footer Built with Love by the Layer5 Community">
                   <Typography variant="body2" align="center" color="textSecondary" component="p">
                     <span onClick={this.handleL5CommunityClick} className={classes.footerText}>
                       Built with

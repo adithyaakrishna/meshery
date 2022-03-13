@@ -189,12 +189,12 @@ class ProviderComponent extends React.Component {
           <img
             className={classes.logo}
             src="/provider/static/img/meshery-logo/meshery-logo-light-text.png"
-            alt="logo"
+            alt="Meshery Logo"
           />
           <Typography variant="h6" gutterBottom className={classes.chartTitle}>
             Please choose a
             <Tooltip title="Learn more about providers" placement="bottom" data-cy="providers-tooltip">
-              <a className={classes.providerLink} onClick={self.handleModalOpen()}>
+              <a className={classes.providerLink} onClick={self.handleModalOpen()} role="dialog">
                 {" "}
                 provider{" "}
               </a>
@@ -241,7 +241,7 @@ class ProviderComponent extends React.Component {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={self.handleModalClose()} color="primary" data-cy="providers-modal-button-ok" variant="contained">
+              <Button autoFocus onClick={self.handleModalClose()} color="primary" data-cy="providers-modal-button-ok" variant="contained" role="button" aria-label="Modal Button Ok">
                 OK
               </Button>
             </DialogActions>
@@ -254,7 +254,7 @@ class ProviderComponent extends React.Component {
                     variant="contained"
                     color="primary"
                     ref={(ref) => (self.anchorRef = ref)}
-                    aria-label="split button"
+                    aria-label="Split Button"
                   >
                     <Button
                       size="large"
