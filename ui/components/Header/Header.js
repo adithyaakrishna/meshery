@@ -52,11 +52,12 @@ const HeaderComponent = ({ drawerOpen, onDrawerToggle, pageTitle }) => {
                   className={
                     classes.headerIcons + " " + (pageTitle === "Connection Wizard" ? classes.itemActiveItem : "")
                   }
+                  alt="Connection Wizard"
                 />
               </Link>
             </IconButton>
 
-            <IconButton color="inherit" size="large">
+            <IconButton color="inherit" size="large" aria-label="Settings">
               <Link href="/settings">
                 <SettingsIcon
                   className={classes.headerIcons + " " + (pageTitle === "Settings" ? classes.itemActiveItem : "")}

@@ -28,28 +28,28 @@ export const externlinks = [
     id: "doc",
     href: "https://docs.meshery.io",
     title: "Documentation",
-    icon: <DescriptionOutlinedIcon style={drawerIconsStyle} />,
+    icon: <DescriptionOutlinedIcon style={drawerIconsStyle} aria-label="Meshery Docs" />,
     external_icon: ExternalLinkIcon,
   },
   {
     id: "community",
     href: "http://slack.layer5.io",
     title: "Community",
-    icon: <FontAwesomeIcon style={{ marginBottom: 2, ...drawerIconsStyle }} icon={faSlack} transform="grow-1" />,
+    icon: <FontAwesomeIcon style={{ marginBottom: 2, ...drawerIconsStyle }} icon={faSlack} transform="grow-1" aria-label="Layer5 Slack" />,
     external_icon: ExternalLinkIcon,
   },
   {
     id: "mailinglist",
     href: "https://meshery.io/subscribe",
     title: "Mailing List",
-    icon: <MailIcon style={drawerIconsStyle} />,
+    icon: <MailIcon style={drawerIconsStyle} aria-label="Mailing List" />,
     external_icon: ExternalLinkIcon,
   },
   {
     id: "issues",
     href: "https://github.com/meshery/meshery/issues/new/choose",
     title: "Issues",
-    icon: <GitHubIcon style={drawerIconsStyle} />,
+    icon: <GitHubIcon style={drawerIconsStyle} aria-label="Meshery Issues"/>,
     external_icon: ExternalLinkIcon,
   },
 ];
@@ -57,15 +57,16 @@ export const externlinks = [
 export const navigatorItemsTree = [
   {
     id: "Dashboard",
-    icon: <DashboardIcon style={drawerIconsStyle} />,
+    icon: <DashboardIcon style={drawerIconsStyle} aria-label="Dashboard" />,
     href: "/",
     title: "Dashboard",
     show: true,
     link: true,
+    alt:"Dashboard"
   },
   {
     id: "Lifecycle",
-    icon: <LifecycleIcon style={drawerIconsStyle} />,
+    icon: <LifecycleIcon style={drawerIconsStyle} aria-label="Lifecycle" />,
     href: "/management",
     title: "Lifecycle",
     show: true,
@@ -153,7 +154,7 @@ export const navigatorItemsTree = [
   },
   {
     id: "Configuration",
-    icon: <img src="/static/img/configuration_trans.svg" style={{ width: "1.21rem" }} />,
+    icon: <img src="/static/img/configuration_trans.svg" style={{ width: "1.21rem" }} alt="Configurations"/>,
     // disabled: true,
     href: "#",
     title: "Configuration",
@@ -162,7 +163,7 @@ export const navigatorItemsTree = [
     children: [
       {
         id: "Applications",
-        icon: <img src="/static/img/web-applications.svg" style={{ width: "1.21rem" }} />,
+        icon: <img src="/static/img/web-applications.svg" style={{ width: "1.21rem" }} alt="Applications" />,
         href: "/configuration/applications",
         title: "Applications",
         show: true,
@@ -170,7 +171,7 @@ export const navigatorItemsTree = [
       },
       {
         id: "Filters",
-        icon: <img src="/static/img/web-filters.svg" style={{ width: "1.21rem" }} />,
+        icon: <img src="/static/img/web-filters.svg" style={{ width: "1.21rem" }} alt="Filters" />,
         href: "/configuration/filters",
         title: "Filters",
         show: true,
@@ -178,7 +179,7 @@ export const navigatorItemsTree = [
       },
       {
         id: "Patterns",
-        icon: <img src="/static/img/pattern_trans.svg" style={{ width: "1.21rem" }} />,
+        icon: <img src="/static/img/pattern_trans.svg" style={{ width: "1.21rem" }} alt="Patterns" />,
         href: "/configuration/patterns",
         title: "Patterns",
         show: false,
@@ -188,7 +189,7 @@ export const navigatorItemsTree = [
   },
   {
     id: "Performance",
-    icon: <PerformanceIcon style={{ transform: "scale(1.3)", ...drawerIconsStyle }} />,
+    icon: <PerformanceIcon style={{ transform: "scale(1.3)", ...drawerIconsStyle }} aria-label="Performance" />,
     href: "/performance",
     title: "Performance",
     show: true,
@@ -197,7 +198,7 @@ export const navigatorItemsTree = [
       {
         id: "Profiles",
         // icon: <FontAwesomeIcon icon={MailIcon} transform="shrink-2" style={{ verticalAlign: "top" }} />,
-        icon: <MailIcon />,
+        icon: <MailIcon aria-label="Profiles"/>,
         href: "/performance/profiles",
         title: "Profiles",
         show: true,
@@ -214,7 +215,7 @@ export const navigatorItemsTree = [
   }, // title is used for comparison in the Header.js file as well
   {
     id: "Conformance",
-    icon: <ConformanceIcon style={drawerIconsStyle} />,
+    icon: <ConformanceIcon style={drawerIconsStyle} aria-label="Conformance" />,
     href: "/smi_results", //Temp
     title: "Conformance",
     show: true,
@@ -222,7 +223,7 @@ export const navigatorItemsTree = [
     children: [
       {
         id: "Service Mesh Interface",
-        icon: <SmiIcon style={drawerIconsStyle} />,
+        icon: <SmiIcon style={drawerIconsStyle} aria-label="Service Mesh Interface" />,
         href: "/smi_results",
         title: "Service Mesh Interface",
         show: true,

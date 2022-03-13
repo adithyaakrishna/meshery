@@ -30,6 +30,8 @@ const CustomModal = ({
         BackdropComponent={Backdrop}
         BackdropProps={{ timeout : 200, }}
         container={container}
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
       >
         <Fade in={open} sx={{ maxHeight : "90vh", overflow : "auto" }} >{Content}</Fade>
       </CustomModalWrapper>

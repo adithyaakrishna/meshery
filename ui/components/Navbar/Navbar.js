@@ -351,6 +351,7 @@ const Navbar = ({
               <IconButton
                 className={isDrawerCollapsed ? classes.collapsedHelpButton : classes.rightTranslate}
                 onClick={toggleSpacing}
+                aria-label="Help"
               >
                 <HelpIcon className={classes.helpIcon} style={{ fontSize: "1.45rem" }} />
               </IconButton>
