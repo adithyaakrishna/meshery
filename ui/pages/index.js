@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { Button, Grid, Link, Stack, Typography } from "@mui/material";
+import React from "react";
+import { Grid, Link, Stack, Typography } from "@mui/material";
 import { AdaptersChipList, AdaptersListContainer, MesheryServerVersionContainer } from "@/features/mesheryComponents";
 import { PaperWithTitle } from "@/components/Paper";
 import { nanoid } from "@reduxjs/toolkit";
@@ -47,6 +47,8 @@ export default function Dashboard() {
                       startIcon={<SettingsIcon />}
                       onClick={onGrafanaClick}
                       size="large"
+                      role="button"
+                      aria-label="Configure Grafana"
                     >
                       Configure Grafana
                     </MetricsButton>
@@ -62,6 +64,8 @@ export default function Dashboard() {
                       startIcon={<SettingsIcon />}
                       size="large"
                       onClick={onPrometheusClick}
+                      role="button"
+                      aria-label="Configure Prometheus"
                     >
                       Configure Prometheus
                     </MetricsButton>
